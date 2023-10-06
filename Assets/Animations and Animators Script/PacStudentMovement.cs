@@ -14,7 +14,7 @@ public class PacStudentMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        transform.position = new Vector3(0f, 0f, 0f);
+        transform.position = new Vector3(0f, -9f, 0f);
     }
 
     // Update is called once per frame

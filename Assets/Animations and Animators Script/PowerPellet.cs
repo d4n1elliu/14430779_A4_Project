@@ -10,7 +10,7 @@ public class PowerPellet : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        transform.position = new Vector3(0f, 3f, 0f);
+        transform.position = new Vector3(17f, 12f, 0f);
     }
 
     // Update is called once per frame
