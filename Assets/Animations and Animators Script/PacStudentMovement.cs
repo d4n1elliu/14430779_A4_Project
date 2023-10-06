@@ -14,6 +14,7 @@ public class PacStudentMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
+        //Set initial spawnpoint of player to (0, -9, 0) 
         transform.position = new Vector3(0f, -9f, 0f);
     }
 

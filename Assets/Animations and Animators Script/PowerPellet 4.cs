@@ -9,6 +9,7 @@ public class PowerPellet4 : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        //Setting initial spawnpoint to (-16, -8, 0)
         transform.position = new Vector3(-16f, -8, 0f);
     }
 

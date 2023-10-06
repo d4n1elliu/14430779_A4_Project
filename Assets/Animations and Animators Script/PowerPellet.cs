@@ -10,6 +10,7 @@ public class PowerPellet : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
+        //Setting initial spawnpoint to (17, 12, 0)
         transform.position = new Vector3(17f, 12f, 0f);
     }
 
