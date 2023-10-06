@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 84062291}
   - component: {fileID: 84062293}
   - component: {fileID: 84062292}
+  - component: {fileID: 84062294}
   m_Layer: 0
   m_Name: Ninja4
   m_TagString: Untagged
@@ -469,6 +470,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &84062294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84062290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f85227205c92542b2ff8b4857a7e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +585,7 @@ GameObject:
   - component: {fileID: 740998486}
   - component: {fileID: 740998488}
   - component: {fileID: 740998487}
+  - component: {fileID: 740998489}
   m_Layer: 0
   m_Name: Ninja3
   m_TagString: Untagged
@@ -666,6 +680,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &740998489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740998485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb506bc652074e540bba1e74e0359df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1198358031
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +703,7 @@ GameObject:
   - component: {fileID: 1198358032}
   - component: {fileID: 1198358034}
   - component: {fileID: 1198358033}
+  - component: {fileID: 1198358035}
   m_Layer: 0
   m_Name: PacStudent
   m_TagString: Untagged
@@ -771,6 +798,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1198358035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198358031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2db8a465665aed4c97c543d50a587ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1476248706
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +821,7 @@ GameObject:
   - component: {fileID: 1476248707}
   - component: {fileID: 1476248709}
   - component: {fileID: 1476248708}
+  - component: {fileID: 1476248710}
   m_Layer: 0
   m_Name: Ninja1
   m_TagString: Untagged
@@ -876,6 +916,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1476248710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476248706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15d3c2be2d8a75428c7213bce5d4dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1811532639
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +939,7 @@ GameObject:
   - component: {fileID: 1811532640}
   - component: {fileID: 1811532642}
   - component: {fileID: 1811532641}
+  - component: {fileID: 1811532643}
   m_Layer: 0
   m_Name: Ninja2
   m_TagString: Untagged
@@ -981,6 +1034,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1811532643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811532639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4c4af4331ad674ea244f66d2795303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2137553432
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1057,7 @@ GameObject:
   - component: {fileID: 2137553433}
   - component: {fileID: 2137553435}
   - component: {fileID: 2137553434}
+  - component: {fileID: 2137553436}
   m_Layer: 0
   m_Name: Power Flashing Pellet
   m_TagString: Untagged
@@ -1086,3 +1152,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2137553436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137553432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2346e1a639f49a3499c5208df121a580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
