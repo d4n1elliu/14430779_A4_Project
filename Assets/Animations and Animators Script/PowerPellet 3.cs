@@ -9,6 +9,7 @@ public class PowerPellet3 : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+
         transform.position = new Vector3(15.59f, -8.5f, 0f);
     }
 
