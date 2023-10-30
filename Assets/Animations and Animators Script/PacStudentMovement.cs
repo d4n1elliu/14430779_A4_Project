@@ -20,14 +20,6 @@ public class PacStudentMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveXAxis = Input.GetAxis("Horizontal");
-        float moveYAxis = Input.GetAxis("Vertical");
-
-        animator.SetFloat("DirX", moveXAxis);
-        animator.SetFloat("DirY", moveYAxis);
-
-        // Move Pac-Man
-        Vector3 movement = new Vector3(moveXAxis, moveYAxis, 0f);
-        transform.position += movement * Time.deltaTime * 2; // Adjust 'speed' according to your preference
+     
     }
 }
