@@ -12,7 +12,7 @@ public class PacStudentDeathAnimation : MonoBehaviour
         animator = GetComponent<Animator>();
 
 
-        transform.position = new Vector3(0f, -1f, 0f);
+        transform.position = new Vector3(-12.4f, 13.58f, 0f);
     }
 
     // Update is called once per frame

@@ -14,7 +14,7 @@ public class PacStudentMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
-        transform.position = new Vector3(0f, -9f, 0f);
+        transform.position = new Vector3(-12.4f, 13.58f, 0f);
     }
 
     // Update is called once per frame
@@ -28,6 +28,6 @@ public class PacStudentMovement : MonoBehaviour
 
         // Move Pac-Man
         Vector3 movement = new Vector3(moveXAxis, moveYAxis, 0f);
-        transform.position += movement * Time.deltaTime * 1; // Adjust 'speed' according to your preference
+        transform.position += movement * Time.deltaTime * 2; // Adjust 'speed' according to your preference
     }
 }
