@@ -9,8 +9,9 @@ public class PowerPellet2 : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        //Setting initial spawnpoint to (-16, 12, 0)
-        transform.position = new Vector3(-16f, 12f, 0f);
+        //Setting initial spawnpoint to (-12.49f, 9.51f, 0)
+        transform.position = new Vector3(-12.49f, 9.51f, 0f);
+
     }
 
     // Update is called once per frame

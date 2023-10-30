@@ -10,8 +10,9 @@ public class Ninja1 : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        // Set the initial position to (-2, 0, 0) when the game starts
-        transform.position = new Vector3(-2f, 0f, 0f);
+
+        // Set the initial position to (-0.46f, 0.57f, 0f) when the game starts
+        transform.position = new Vector3(-0.46f, 0.57f, 0f);
 
     }
 
