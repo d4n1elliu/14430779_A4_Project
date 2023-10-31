@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraAdjustment: MonoBehaviour
+public class Camera : MonoBehaviour
 {
     public float orthographicSize = 16f;
     // Start is called before the first frame update
