@@ -3,12 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
-{
-    public float moveSpeed = 5f; // Speed at which PacStudent moves
-    private Vector3 targetPos;
-    private Vector3 nextGridPos;
-    private Vector3 lastInputDir = Vector3.zero;
+{   
+    //Initial movement speed for pacman
+    public float moveSpeed = 5f; 
 
+    //Plays the pellet eating sound
+    public AudioClip pelletEatingSound;
+
+    //Plays the moving pacman sound
+    public AudioClip movingSound;
+
+    //Direction where pacman can move
+    public enum Directions { Up, Down, Left, Right };
+
+    //Current position pacman is in
+    private Vector3 targetPos;
+
+    //Next postion pacman is in
+    private Vector3 nextGridPos;
+
+    //Saves the input entered in keyboard
+    private Vector3 lastInput = Vector3.zero;
+
+    //Default movement direction
+    public Directions initialMoveDir = Directions.Right;
+
+    //Set the pac man to not move
+    public bool isMoving = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +40,41 @@ public class PacStudentController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //MovementInput();
     }
+
+    /*private void MovementInput()
+    {
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            if (CanMoveInThisDirection(Directions.Right))
+            {
+                initialMoveDir = Directions.Right;
+            }
+        }
+
+        else if (Input.GetAxis("Horizontal") > 0)
+        {
+            if (CanMoveInThisDirection(Directions.Left))
+            {
+                initialMoveDir = Directions.Right;
+            }
+        }
+
+        else if (Input.GetAxis("Vertical") > 0)
+        {
+            if (CanMoveInThisDirection(Directions.Up))
+            {
+                initialMoveDir = Directions.Up;
+            }
+        }
+
+        else if (Input.GetAxis("Vertical") > 0)
+        {
+            if (CanMoveInThisDirection(Directions.Down))
+            {
+                initialMoveDir = Directions.Down;
+            }
+        }
+    }*/
 }
