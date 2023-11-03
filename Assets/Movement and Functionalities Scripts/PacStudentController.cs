@@ -6,8 +6,9 @@ using UnityEngine;
 public class PacStudentController : MonoBehaviour
 {
     private Animator animator;
+
     //Initial movement speed for pacman
-    public float moveSpeed = 5f; 
+    public float moveSpeed = 5f;
 
     //Plays the pellet eating sound
     public AudioClip pelletEatingSound;
@@ -18,13 +19,15 @@ public class PacStudentController : MonoBehaviour
     //Direction where pacman can move
     public enum Directions { Up, Down, Left, Right };
 
-    //Current position pacman is in
-    private Vector3 targetPos;
+    //Duration of the movement tween
+    public float moveDur = 0.5f;
 
-    //Next postion pacman is in
-    private Vector3 nextGridPos;
+    private Tweener tweener;
 
-    //Saves the input entered in keyboard
+    //Stoes the current input
+    private Vector3 currentInput = Vector3.zero;
+
+    //Stores the last input
     private Vector3 lastInput = Vector3.zero;
 
     //Default movement direction
@@ -40,6 +43,9 @@ public class PacStudentController : MonoBehaviour
 
         //Set initial spawnpoint of player to (-12.4f, 13.58f, 0f)
         transform.position = new Vector3(-12.4f, 13.58f, 0f);
+
+        //Initialising other components and variables 
+        tweener = GetComponent<Tweener>();
     }
 
     // Update is called once per frame
@@ -50,36 +56,47 @@ public class PacStudentController : MonoBehaviour
 
     /*private void MovementInput()
     {
-        if (Input.GetAxis("Horizontal") > 0)
+        //Check for player input
+        float horiInput = Input.GetAxis("Horizontal");
+        float vertInput = Input.GetAxis("Vertical");
+
+        Vector3 startPos = transform.position;
+        Vector3 endPos = startPos;
+
+        //Check for horizontal movement (A or D Key)
+        if (horiInput != 0f)
         {
-            if (CanMoveInThisDirection(Directions.Right))
-            {
-                initialMoveDir = Directions.Right;
-            }
+            lastInput = new Vector3(horiInput, 0f, 0f);
         }
 
-        else if (Input.GetAxis("Horizontal") > 0)
+        //Check for vertical movement (W or S Key)
+        else if (vertInput != 0f)
         {
-            if (CanMoveInThisDirection(Directions.Left))
-            {
-                initialMoveDir = Directions.Right;
-            }
+            lastInput = new Vector3(0f, vertInput, 0f);
         }
 
-        else if (Input.GetAxis("Vertical") > 0)
-        {
-            if (CanMoveInThisDirection(Directions.Up))
-            {
-                initialMoveDir = Directions.Up;
-            }
-        }
+        endPos = startPos + lastInput;
 
-        else if (Input.GetAxis("Vertical") > 0)
+        if (IsPositionValid(endPos))
         {
-            if (CanMoveInThisDirection(Directions.Down))
+            currentInput = lastInput;
+
+            tweener.AddTween(transform, startPos, endPos, moveDur); 
+        }
+        else
+        {
+            //If last input direction is blocked, attempts to move in a current input direction
+            endPos = startPos + currentInput;
+            if (IsPositionValid(endPos))
             {
-                initialMoveDir = Directions.Down;
+                //Use tweener to move pacStudent in a straight line
+                tweener.AddTween(transform, startPos, endPos, moveDur);
             }
         }
+    }
+
+    private bool IsPositionValid(Vector3 position)
+    {
+        return true;
     }*/
 }
