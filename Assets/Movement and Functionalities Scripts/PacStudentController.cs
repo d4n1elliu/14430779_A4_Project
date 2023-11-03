@@ -18,11 +18,10 @@ public class PacStudentController : MonoBehaviour
     //Direction where pacman can move
     public enum Directions { Up, Down, Left, Right };
 
-    //Current position pacman is in
-    private Vector3 targetPos;
+    //Duration of the movement tween
+    public float moveDur = 0.5f;
 
-    //Next postion pacman is in
-    private Vector3 nextGridPos;
+    private Tweener tweener;
 
     //Saves the input entered in keyboard
     private Vector3 lastInput = Vector3.zero;
@@ -40,46 +39,23 @@ public class PacStudentController : MonoBehaviour
 
         //Set initial spawnpoint of player to (-12.4f, 13.58f, 0f)
         transform.position = new Vector3(-12.4f, 13.58f, 0f);
+
+        tweener = GetComponent<Tweener>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //MovementInput();
+        MovementInput();
     }
 
-    /*private void MovementInput()
+    private void MovementInput()
     {
-        if (Input.GetAxis("Horizontal") > 0)
-        {
-            if (CanMoveInThisDirection(Directions.Right))
-            {
-                initialMoveDir = Directions.Right;
-            }
-        }
+        //Check for player input
+        float horiInput = Input.GetAxis("Horizontal");
+        float vertInput = Input.GetAxis("Vertical");
 
-        else if (Input.GetAxis("Horizontal") > 0)
-        {
-            if (CanMoveInThisDirection(Directions.Left))
-            {
-                initialMoveDir = Directions.Right;
-            }
-        }
 
-        else if (Input.GetAxis("Vertical") > 0)
-        {
-            if (CanMoveInThisDirection(Directions.Up))
-            {
-                initialMoveDir = Directions.Up;
-            }
-        }
 
-        else if (Input.GetAxis("Vertical") > 0)
-        {
-            if (CanMoveInThisDirection(Directions.Down))
-            {
-                initialMoveDir = Directions.Down;
-            }
-        }
-    }*/
+    }
 }
