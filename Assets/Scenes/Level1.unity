@@ -13104,6 +13104,7 @@ GameObject:
   - component: {fileID: 1198358034}
   - component: {fileID: 1198358033}
   - component: {fileID: 1198358035}
+  - component: {fileID: 1198358036}
   m_Layer: 0
   m_Name: PacStudent
   m_TagString: Untagged
@@ -13208,6 +13209,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2db8a465665aed4c97c543d50a587ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1198358036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198358031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06d1aaefa1918f4fb253c93d08f4772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1228073470
