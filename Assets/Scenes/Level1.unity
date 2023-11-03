@@ -942,6 +942,7 @@ GameObject:
   - component: {fileID: 471957833}
   - component: {fileID: 471957832}
   - component: {fileID: 471957830}
+  - component: {fileID: 471957835}
   m_Layer: 0
   m_Name: Power Flashing Pellet (2)
   m_TagString: Untagged
@@ -1048,6 +1049,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &471957835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471957829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecfff76c1bdbf76479d331b2d1a31240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8515,6 +8528,7 @@ GameObject:
   - component: {fileID: 1348912951}
   - component: {fileID: 1348912950}
   - component: {fileID: 1348912948}
+  - component: {fileID: 1348912953}
   m_Layer: 0
   m_Name: Power Flashing Pellet (4)
   m_TagString: Untagged
@@ -8621,6 +8635,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348912953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348912947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecfff76c1bdbf76479d331b2d1a31240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1414220625
 GameObject:
   m_ObjectHideFlags: 0
@@ -8713,6 +8739,7 @@ GameObject:
   - component: {fileID: 1472471925}
   - component: {fileID: 1472471924}
   - component: {fileID: 1472471922}
+  - component: {fileID: 1472471927}
   m_Layer: 0
   m_Name: Power Flashing Pellet (3)
   m_TagString: Untagged
@@ -8819,6 +8846,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1472471927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472471921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecfff76c1bdbf76479d331b2d1a31240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1476248706
 GameObject:
   m_ObjectHideFlags: 0
@@ -9980,6 +10019,7 @@ GameObject:
   - component: {fileID: 2137553435}
   - component: {fileID: 2137553434}
   - component: {fileID: 2137553436}
+  - component: {fileID: 2137553437}
   m_Layer: 0
   m_Name: Power Flashing Pellet (1)
   m_TagString: Untagged
@@ -10084,5 +10124,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2346e1a639f49a3499c5208df121a580, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2137553437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137553432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecfff76c1bdbf76479d331b2d1a31240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
